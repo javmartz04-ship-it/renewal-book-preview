@@ -199,6 +199,7 @@ body.show-cursor{cursor:default}
 .s-honest .cav h4{margin:0 0 8px;font:500 24px/1.3 var(--sans);color:var(--t1)}
 .s-honest .story p{font:400 24px/1.5 var(--sans);color:var(--t2);margin:0 0 26px}
 .s-honest .story .idx{display:block;margin-bottom:16px}
+.s-honest .story p.road{font:500 26px/1.4 var(--sans);color:var(--t1);padding-left:22px;border-left:2px solid var(--gold);margin:-6px 0 30px}
 .s-honest .pay{font:italic 400 42px/1.2 var(--serif);color:var(--gold-2);margin-top:8px}
 .s-honest .turn{position:absolute;left:0;right:0;bottom:0;padding-top:28px;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:96px}
 .s-honest .turn p{margin:0;font:400 27px/1.4 var(--sans);color:var(--t1)}
@@ -397,20 +398,22 @@ body.show-cursor{cursor:default}
 .s-full .join{display:flex;align-items:center;gap:20px}
 .s-full .qr{width:112px;height:112px;border:1px dashed var(--line-gold);border-radius:3px;display:flex;align-items:center;justify-content:center;text-align:center;font:500 11px/1.5 var(--mono);letter-spacing:.16em;color:var(--t4);flex:none}
 .s-full .join .u .k{margin-bottom:10px}
-.s-full .join .u .url{font:500 26px/1 var(--mono);letter-spacing:.02em;color:var(--gold-2)}
+.s-full .join .u .url{font:italic 400 42px/1 var(--serif);letter-spacing:-.005em;color:var(--gold-2)}
 
 /* 28 proof, two at once */
-.s-proof .grid{display:grid;grid-template-columns:1fr 1fr;margin-top:52px}
-.s-proof .c{padding-right:70px}
-.s-proof .c+.c{border-left:1px solid var(--line);padding-left:70px;padding-right:0}
-.s-proof .big{font:400 172px/.9 var(--serif);color:var(--gold-2);letter-spacing:-.03em}
-.s-proof .cap{font:400 26px/1.4 var(--sans);color:var(--t2);margin:18px 0 30px;max-width:640px}
-.s-proof .qt{font:italic 400 30px/1.4 var(--serif);color:var(--t1);margin:0}
+.s-proof .grid{display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:52px}
+.s-proof .c{padding:0 52px}
+.s-proof .c:first-child{padding-left:0}
+.s-proof .c:last-child{padding-right:0}
+.s-proof .c+.c{border-left:1px solid var(--line)}
+.s-proof .big{font:400 112px/.9 var(--serif);color:var(--gold-2);letter-spacing:-.03em}
+.s-proof .cap{font:400 23px/1.4 var(--sans);color:var(--t2);margin:18px 0 26px;max-width:520px}
+.s-proof .qt{font:italic 400 27px/1.4 var(--serif);color:var(--t1);margin:0}
 .s-proof .qt b{font-weight:400;color:var(--gold-2)}
 .s-proof .who{display:flex;align-items:center;gap:20px;margin-top:30px}
 .s-proof .who i{width:48px;height:1px;background:var(--gold);display:block}
 .s-proof .who span{font:400 20px/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--t2)}
-.s-proof .c.b .big{font-size:118px;color:var(--t1)}
+.s-proof .c.b .big{font-size:84px;color:var(--t1);line-height:.98}
 .s-proof .c.b .cap{margin-bottom:30px}
 
 /* 30 the math close */
@@ -430,12 +433,12 @@ body.show-cursor{cursor:default}
 .rail .p{font:400 54px/1 var(--serif);color:var(--t1);letter-spacing:-.02em}
 .rail .p small{font-size:.36em;font-style:italic;color:var(--t2)}
 .rail .d{width:1px;height:44px;background:var(--line)}
-.rail .u{font:500 22px/1.35 var(--mono);letter-spacing:.02em;color:var(--gold-2)}
+.rail .u{font:italic 400 38px/1.1 var(--serif);letter-spacing:-.005em;color:var(--gold-2)}
 .rail .u small{display:block;font:400 12px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--t4);margin-bottom:7px}
 .s-ama .rail{bottom:130px}
 .s-ama .rail .p{font-size:72px}
 .s-ama .rail .d{height:58px}
-.s-ama .rail .u{font-size:30px}
+.s-ama .rail .u{font-size:48px}
 .s-ama .rail .u small{font-size:13px;color:var(--t3)}
 
 /* 24 the room \2014  the one thing */
@@ -495,14 +498,14 @@ body.show-cursor{cursor:default}
 .stepk{color:var(--gold)}
 
 /* 24 the community */
-.s-comm .two{display:grid;grid-template-columns:1.18fr 1fr;margin-top:34px}
+.s-comm .two{display:grid;grid-template-columns:1.18fr 1fr;margin-top:26px}
 .s-comm .col{padding-right:56px}
 .s-comm .col+.col{border-left:1px solid var(--line);padding-left:56px;padding-right:0}
 .s-comm .ch{font:500 14px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin:0 0 20px}
 .s-comm .col+.col .ch{color:var(--t3)}
-.s-comm .it{padding:10px 0;border-bottom:1px solid var(--line-2)}
-.s-comm .it b{display:block;font:500 25px/1.2 var(--sans);color:var(--t1);font-weight:500;letter-spacing:-.01em}
-.s-comm .it span{display:block;font:400 20px/1.35 var(--sans);color:var(--t3);margin-top:4px}
+.s-comm .it{padding:6px 0;border-bottom:1px solid var(--line-2)}
+.s-comm .it b{display:block;font:500 23px/1.2 var(--sans);color:var(--t1);font-weight:500;letter-spacing:-.01em}
+.s-comm .it span{display:block;font:400 18px/1.3 var(--sans);color:var(--t3);margin-top:2px}
 .s-comm .day{display:grid;grid-template-columns:132px 1fr;gap:18px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line-2)}
 .s-comm .day i{font:500 14px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-style:normal}
 .s-comm .day p{font:400 23px/1.25 var(--sans);color:var(--t1);margin:0}
@@ -610,7 +613,7 @@ body.show-cursor{cursor:default}
 .s-ads2 .shot2 .frame .bar{background:rgba(6,14,27,.94);backdrop-filter:none}
 
 /* 27 the Real CRM \2014  the back office */
-.s-crmx .caps .r{padding:5px 0;border-bottom:1px solid var(--line-2);display:grid;grid-template-columns:26px 1fr;gap:18px;align-items:baseline}
+.s-crmx .caps .r{padding:4px 0;border-bottom:1px solid var(--line-2);display:grid;grid-template-columns:26px 1fr;gap:18px;align-items:baseline}
 .s-crmx .caps .r i{font:500 13px/1 var(--mono);color:var(--gold);font-style:normal}
 .s-crmx .caps .r b{display:block;font:500 22px/1.18 var(--sans);color:var(--t1);letter-spacing:-.01em}
 .s-crmx .caps .r span{display:block;font:400 17px/1.3 var(--sans);color:var(--t3);margin-top:2px}
@@ -816,7 +819,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     <div class="stats a">
       <div class="stat"><div class="num">2020</div><div class="label">Started serving boomers</div></div>
       <div class="stat"><div class="num"><span class="count" data-to="137" data-prefix="$" data-suffix="K">$137K</span></div><div class="label">In my first 15 months</div></div>
-      <div class="stat"><div class="num"><span class="count" data-to="3500" data-suffix="+" data-comma="1">3,500+</span></div><div class="label">Policies submitted</div></div>
+      <div class="stat"><div class="num"><span class="count" data-to="4000" data-suffix="+" data-comma="1">4,000+</span></div><div class="label">Policies submitted</div></div>
     </div>
   </div>
 </section>
@@ -949,6 +952,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
       <div class="story">
         <div class="frag">
           <p>Then he built a script. He started cash flowing immediately, because he was uncovering cross-sells people wanted right then. They didn't want to wait.</p>
+          <p class="road">A simple three-step roadmap at the end of his script changed his business forever.</p>
         </div>
         <div class="frag">
           <div class="pay">Since then he's grown to $300K per month in revenue.</div>
@@ -972,8 +976,8 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
       <div class="frag">
         <div class="idx" style="margin-bottom:22px">02 &nbsp;&#xB7;&nbsp; Have them write these down</div>
         <div class="list">
-          <div class="row"><div>Max out of pocket</div></div>
-          <div class="row"><div>Inpatient costs</div></div>
+          <div class="row"><div>Max out of pocket</div><span>$7,000</span></div>
+          <div class="row"><div>Inpatient costs</div><span>roughly $2,000&ndash;$3,000</span></div>
           <div class="row"><div>Cancer</div><span>20%, always</span></div>
           <div class="row"><div>Rehab co-pays</div><span>they stack up fast</span></div>
         </div>
@@ -1070,7 +1074,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
       <div class="row frag"><div class="t">Cross-selling</div><div class="d">The exact five-minute conversations for dental, hospital, cancer, home health. This is the free money.</div></div>
       <div class="row frag"><div class="t">Medicare Supplement</div><div class="d">Don't know Med Supp yet? Easy money once you do. We teach it start to finish.</div></div>
       <div class="row frag"><div class="t">Technology training</div><div class="d">The right sites to quote seniors, how to run them, how to not look lost on a call.</div></div>
-      <div class="row frag"><div class="t">Sales training</div><div class="d">How to actually close: on the phone, at the table, on a Zoom.</div></div>
+      <div class="row frag"><div class="t">Sales training</div><div class="d">My method, built over seven years in this business and thousands of policies written. An actual formula for you to follow.</div></div>
     </div>
     <p class="sub frag" style="margin-top:34px;font-size:26px"><b style="color:var(--t1);font-weight:500">Hundreds of hours</b> plus a community that celebrates your wins and answers your questions the same day.</p>
   </div>
@@ -1103,10 +1107,10 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     <h1 class="head a" style="font-size:80px">The system that runs<br>while you sleep.</h1>
     <p class="sub a">Already built, not a blank login.</p>
     <div class="ledger a crmled" style="margin-top:36px">
-      <div class="row frag"><div class="t">Done-for-you snapshots</div><div class="d">Load my exact setup with one click. The stuff that took me years, dropped into your account on day one.</div></div>
+      <div class="row frag"><div class="t">Done-for-you snapshots</div><div class="d">Load my exact setup with one click. The stuff that took me years to build.</div></div>
       <div class="row frag"><div class="t">Funnels that capture leads</div><div class="d">Landing pages, booking pages, opt-ins. Already built. You just edit and turn them on.</div></div>
       <div class="row frag"><div class="t">Workflows &amp; automation</div><div class="d">Follow-up texts, emails, reminders, firing automatically so no lead goes cold while you're on a call.</div></div>
-      <div class="row frag"><div class="t">Marketing courses built in</div><div class="d">Not theory. The exact campaigns I run to make leads come to me.</div></div>
+      <div class="row frag"><div class="t">An actual ads course</div><div class="d">Not theory. It teaches you how to set up your first ad in seven days.</div></div>
     </div>
     <p class="frag" style="margin:26px 0 0;font:italic 400 26px/1.4 var(--serif);color:var(--t2);max-width:1560px">A platform like this runs <span class="au">$500+/mo</span> on its own. Personally, I paid <span class="au">$5,000</span> for all the snapshots needed to build and run successful webinars and funnels so you didn't have to.</p>
   </div>
@@ -1141,7 +1145,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     <div class="wk a">
       <div class="d frag"><div class="day">Monday <span>10am</span></div><h3>Marketing<br>and sales</h3></div>
       <div class="d frag"><div class="day">Tuesday</div><h3>Sales<br>and annuity</h3></div>
-      <div class="d frag"><div class="day">Wednesday</div><h3>Marketing, AI<br>and visualization</h3></div>
+      <div class="d frag"><div class="day">Wednesday</div><h3>Marketing, AI<br>and sales training</h3></div>
       <div class="d frag"><div class="day">Thursday</div><h3>Sales<br>training</h3></div>
       <div class="d frag"><div class="day">Friday</div><h3>Marketing<br>and sales</h3></div>
     </div>
@@ -1154,16 +1158,16 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
   <div class="light"></div>
   <div class="content">
     <h1 class="head a" style="font-size:72px">Training every single day.</h1>
-    <p class="sub a" style="margin-top:16px;font-size:26px">Marketing with Johnny on Monday and Friday. Sales with Brock Partners on Tuesday, Wednesday, Thursday.</p>
+    <p class="sub a" style="margin-top:16px;font-size:26px">Marketing with Johnny on Monday, Wednesday and Friday. Sales with Brock Partners on Tuesday, Wednesday, Thursday.</p>
     <div style="position:relative;margin-top:40px;height:600px">
       <div class="frame live a">
         <div class="bar"><i></i><i></i><i></i><span>skool.com &#xB7; Calendar</span></div>
         <video muted loop playsinline preload="auto" poster="https://renewal-book.javier-d51.workers.dev/assets/training-calendar-poster.jpg" src="https://renewal-book.javier-d51.workers.dev/assets/training-calendar.mp4"></video>
       </div>
       <div class="pts a">
-        <div class="row"><h4>Monday &amp; Friday</h4><p>Marketing with Johnny. What's working right now, this week.</p></div>
+        <div class="row"><h4>Monday, Wednesday &amp; Friday</h4><p>Marketing with Johnny. What's working right now, this week.</p></div>
         <div class="row"><h4>Tuesday to Thursday</h4><p>Sales with Brock Partners.</p></div>
-        <div class="row"><h4>Every business day</h4><p>You are never more than 24 hours from a real answer from a real person who does this for a living.</p></div>
+        <div class="row"><h4>Seven trainings a week</h4><p>Seven live trainings available in total, including one for annuities. Never more than 24 hours from a real answer.</p></div>
       </div>
     </div>
   </div>
@@ -1174,21 +1178,22 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
   <div class="light"></div>
   <div class="content">
     <h1 class="head a" style="font-size:64px">You get into the <em>Skool community.</em></h1>
-    <p class="sub a" style="margin-top:12px;font-size:25px">The Real Insurance Group. <b style="color:var(--t1);font-weight:500"><span data-seat="now">207</span> agents</b> already in there. Everything unlocked the day you join.</p>
+    <p class="sub a" style="margin-top:12px;font-size:25px">The Real Insurance Group. <b style="color:var(--t1);font-weight:500"><span data-seat="now">222</span> agents</b> already in there. Everything unlocked the day you join.</p>
     <div class="two a">
       <div class="col">
-        <p class="ch">The classroom &middot; 50+ trainings</p>
+        <p class="ch">The classroom &middot; hundreds of hours of training</p>
         <div class="it frag"><b>Cross-selling</b><span>Dental, hospital indemnity, cancer, home health. The five-minute conversations. This is the free money.</span></div>
         <div class="it frag"><b>Medicare Supplement, start to finish</b><span>Don't know Med Supp yet? Easy money once you do.</span></div>
         <div class="it frag"><b>Sales training</b><span>How to close. On the phone, at the kitchen table, on a Zoom.</span></div>
         <div class="it frag"><b>Facebook Ads for beginners</b><span>From a dead stop to a running account.</span></div>
-        <div class="it frag"><b>Annuity training with Todd W</b><span>The highest commissions in the business.</span></div>
+        <div class="it frag"><b>Tech training</b><span>The right sites to quote seniors, and how to run them without looking lost on a call.</span></div>
+        <div class="it frag"><b>Scripts built for the ads we teach</b><span>The lead comes in off the ad, and you already know exactly what to say.</span></div>
       </div>
       <div class="col">
         <p class="ch">Live Q&amp;A &middot; every business day</p>
         <div class="day frag"><i>Monday</i><p>Marketing, with Johnny</p></div>
         <div class="day frag"><i>Tuesday</i><p>Sales and annuity</p></div>
-        <div class="day frag"><i>Wednesday</i><p>Marketing, AI and visualization</p></div>
+        <div class="day frag"><i>Wednesday</i><p>Marketing, AI and sales training</p></div>
         <div class="day frag"><i>Thursday</i><p>Sales training</p></div>
         <div class="day frag"><i>Friday</i><p>Marketing, and running an agency</p></div>
         <p class="ask frag">Post in the morning, get an answer by lunch &mdash; <b>from an agent who already did it.</b></p>
@@ -1217,8 +1222,8 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     <h1 class="head a" style="font-size:64px">We're <span data-seat="left">8</span> members from the wall.</h1>
     <div class="meterwrap a">
       <div class="mlab">
-        <div class="a1"><span data-seat="now">207</span> members<span>Today, right now</span></div>
-        <div class="a2"><span>At <b data-seat="cap">215</b> the price becomes</span>$297<small style="font-size:.44em;font-style:italic">/mo</small></div>
+        <div class="a1"><span data-seat="now">222</span> members<span>Today, right now</span></div>
+        <div class="a2"><span>At <b data-seat="cap">230</b> the price becomes</span>$297<small style="font-size:.44em;font-style:italic">/mo</small></div>
       </div>
       <div class="meter"><i style="width:94%"></i><u style="right:0"></u></div>
     </div>
@@ -1246,7 +1251,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
       <div class="k3">Not on the website.<br>Not in the follow-up email.</div>
     </div>
     <div class="lines a">
-      <div class="ln frag"><i>01</i><p><b>You showed up live and you stayed.</b> That's the whole qualification. Nobody who watches a replay gets this.</p></div>
+      <div class="ln frag"><i>01</i><p><b>You showed up live and you stayed.</b> That's the whole qualification. <b>There is no replay.</b> If I ever decide to do one, it will be $297.</p></div>
       <div class="ln frag"><i>02</i><p><b>It has never been sold as a package.</b> Every piece of it is something I charge for separately, every other day of the year.</p></div>
       <div class="ln frag"><i>03</i><p><b>It isn't coming back next month.</b> I'm not running this again in AEP and I'm not emailing it to you Thursday.</p></div>
       <div class="ln frag"><i>04</i><p><b>When this webinar ends, it ends.</b> The membership stays open. This does not.</p></div>
@@ -1260,16 +1265,17 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
   <div class="light"></div>
   <div class="content">
     <div class="gtag a"><span class="gn">Bonus 01</span><span class="gt">The Real CRM</span><span class="gp"><span class="gw">$97/mo</span><span class="gf">FREE</span></span></div>
-    <h1 class="head a" style="font-size:50px">You don't just get the community.<br>You get the <em>Real CRM.</em></h1>
+    <h1 class="head a" style="font-size:48px">You don't just get the community. You get the <em>Real CRM.</em></h1>
     <p class="sub a" style="margin-top:10px;font-size:23px">The system behind the marketing. Here's what it actually does for you.</p>
     <div class="two a" style="margin-top:14px">
       <div class="caps">
-        <div class="r frag"><i>01</i><div><b>You stop losing leads you already paid for</b><span>Every text, call and email in one inbox, with the recordings. Nothing falls through.</span></div></div>
-        <div class="r frag"><i>02</i><div><b>You stop chasing people to book</b><span>Live booking pages. A senior picks a time at 9pm without you touching the phone.</span></div></div>
-        <div class="r frag"><i>03</i><div><b>Follow-up happens while you're at a kitchen table</b><span>Texts, reminders and no-show sequences fire whether you remember or not.</span></div></div>
-        <div class="r frag"><i>04</i><div><b>You launch a campaign without hiring anybody</b><span>Pages, funnels and forms you build yourself in an afternoon.</span></div></div>
-        <div class="r frag"><i>05</i><div><b>You finally know what's working</b><span>Pipelines and a dashboard. Where every deal sits, and what it's worth.</span></div></div>
-        <div class="r frag"><i>06</i><div><b>You own the list, not a lead vendor</b><span>Your account, your contacts, your marketing. Nobody can switch it off.</span></div></div>
+        <div class="r frag"><i>01</i><div><b>The person who controls their marketing controls the business</b><span>You will run your company, and it will grow because of it.</span></div></div>
+        <div class="r frag"><i>02</i><div><b>You stop losing leads you already paid for</b><span>Every text, call and email in one inbox, with the recordings. Nothing falls through.</span></div></div>
+        <div class="r frag"><i>03</i><div><b>You stop chasing people to book</b><span>Live booking pages. A senior picks a time at 9pm without you touching the phone.</span></div></div>
+        <div class="r frag"><i>04</i><div><b>Follow-up happens while you're at a kitchen table</b><span>Texts, reminders and no-show sequences fire whether you remember or not.</span></div></div>
+        <div class="r frag"><i>05</i><div><b>You launch a campaign without hiring anybody</b><span>Pages, funnels and forms you build yourself in an afternoon.</span></div></div>
+        <div class="r frag"><i>06</i><div><b>You finally know what's working</b><span>Pipelines and a dashboard. Where every deal sits, and what it's worth.</span></div></div>
+        <div class="r frag"><i>07</i><div><b>You own the list, not a lead vendor</b><span>Your account, your contacts, your marketing. Nobody can switch it off.</span></div></div>
       </div>
       <div class="minis">
         <div class="frame live frag"><div class="bar"><i></i><i></i><i></i><span>Automation</span></div><img src="https://renewal-book.javier-d51.workers.dev/assets/crm-auto.jpg" alt="Automation builder"></div>
@@ -1353,7 +1359,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     <div class="led a">
       <div class="r frag"><div class="t">The Real CRM &mdash; every month you stay</div><div class="p">$97<small>/mo</small></div></div>
       <div class="r frag"><div class="t">Every automation and funnel, built and loaded for you</div><div class="p">$5,000</div></div>
-      <div class="r frag"><div class="t">The setup call &mdash; David builds your account with you</div><div class="p">$1,000</div></div>
+      <div class="r frag"><div class="t">The onboarding call &mdash; David builds your account with you</div><div class="p">$1,000</div></div>
       <div class="r frag"><div class="t">The Facebook Ads course</div><div class="p">$2,000</div></div>
       <div class="r frag"><div class="t">Your First 100 Calls<small>How to turn a warm market (100 clients, 200, whatever you have) into $10,000, $20,000, $30,000 in the next 60 days.</small></div><div class="p na">not for sale</div></div>
       <div class="tot frag"><div class="l">What you'd pay for this<br>anywhere else</div><div class="n"><span class="count" data-to="8000" data-prefix="$" data-comma="1">$8,000</span><small>Plus $97 a month</small></div><div class="n" style="color:var(--t1)">$0<small>What you pay for it</small></div></div>
@@ -1371,7 +1377,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
         <p class="ph">What you're buying</p>
         <div class="hero">
           <h3>The Skool community</h3>
-          <p>50+ trainings, live Q&amp;A every business day, <span data-seat="now">207</span> agents. Nothing up front, cancel anytime.</p>
+          <p>Hundreds of hours of training, live Q&amp;A every business day, <span data-seat="now">222</span> agents. Nothing up front, cancel anytime.</p>
         </div>
         <div class="sum"><div class="l">Your price</div><div class="v">$147<span style="font-size:.4em;font-style:italic">/mo</span></div></div>
       </div>
@@ -1379,7 +1385,7 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
         <p class="ph">What you're being given &middot; free, tonight only</p>
         <div class="li"><div class="n">The Real CRM, every month you stay</div><div class="v">$97<span style="font-size:.4em;font-style:italic;color:var(--t2)">/mo</span></div></div>
         <div class="li"><div class="n">Every automation and funnel, built and loaded</div><div class="v">$5,000</div></div>
-        <div class="li"><div class="n">The setup call &mdash; David builds your account with you</div><div class="v">$1,000</div></div>
+        <div class="li"><div class="n">The onboarding call &mdash; David builds your account with you</div><div class="v">$1,000</div></div>
         <div class="li"><div class="n">The Facebook Ads course</div><div class="v">$2,000</div></div>
         <div class="li"><div class="n">Your First 100 Calls</div><div class="v na">not for sale</div></div>
         <div class="sum"><div class="l">Free tonight</div><div class="v">$8,000</div></div>
@@ -1387,9 +1393,9 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
     </div>
     <div class="bar a">
       <div class="yp"><p class="k">Your price, right now</p><div class="big">$147<small>/mo</small></div></div>
-      <div class="ap"><p class="k">Once we hit <span data-seat="cap">215</span> members</p><div class="big">$297<small>/mo</small></div></div>
-      <div class="gr"><b>Two things expire, separately.</b><br>The <b>$147</b> ends at <span data-seat="cap">215</span> members &mdash; <span data-seat="left">8</span> to go.<br>The <b>$8,000</b> ends when this webinar does.</div>
-      <div class="join"><div class="u"><p class="k">The link is in the chat</p><div class="url">realinsurancegroup.com/join</div></div></div>
+      <div class="ap"><p class="k">Once we hit <span data-seat="cap">230</span> members</p><div class="big">$297<small>/mo</small></div></div>
+      <div class="gr"><b>Two things expire, separately.</b><br>The <b>$147</b> ends at <span data-seat="cap">230</span> members &mdash; <span data-seat="left">8</span> to go.<br>The <b>$8,000</b> ends when this webinar does.</div>
+      <div class="join"><div class="u"><p class="k">How to join</p><div class="url">The link is in the chat.</div></div></div>
     </div>
   </div>
 </section>
@@ -1412,24 +1418,30 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
         <p class="qt">&#x201C;After joining Johnny and the Real Insurance Group, I started running Facebook ads, hired a virtual assistant, and now have a full calendar year-round. I completely changed how I market my business and <b>finally have a system to scale</b>.&#x201D;</p>
         <div class="who"><i></i><span>Mindy Baron</span></div>
       </div>
+      <div class="c b frag">
+        <div class="big">Secret<br>weapon</div>
+        <p class="cap">In his own words.</p>
+        <p class="qt">&#x201C;In the wild world of Medicare, <b>Johnny Brock is my secret weapon.</b> His creative ideas are above par. His energy can power AEP by itself, and his honesty keeps me grounded and growing the right way.&#x201D;</p>
+        <div class="who"><i></i><span>Thomas Key</span></div>
+      </div>
     </div>
   </div>
-  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>The link is in the chat</small>realinsurancegroup.com/join</div></div>
+  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>How to join</small>The link is in the chat.</div></div>
 </section>
 
 <!-- &#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550; 34 WHAT HAPPENS NEXT &#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550; -->
 <section class="slide s-next" data-kicker="Here's what happens next">
   <div class="light"></div>
   <div class="content">
-    <h1 class="head a">You click once, and there<br>are <span data-seat="left">8</span> seats left.</h1>
+    <h1 class="head a"><span data-seat="left">8</span> seats are left.<br><em>The link is in the chat.</em></h1>
     <p class="p a">Click the link, join at <b>$147</b>, and you're in tonight with all eight thousand dollars of it. Nothing to wait for, nothing to install.</p>
     <div class="cols c3 steps a">
-      <div class="col"><span class="idx">Tonight</span><h3>Everything unlocks</h3><p>The community, all 50+ trainings, the CRM, the ads course. Immediately.</p></div>
-      <div class="col"><span class="idx">Right away</span><h3>Your setup call booked</h3><p>The setup call with my tech team, straight from your account.</p></div>
-      <div class="col"><span class="idx">Tomorrow</span><h3>The live call</h3><p>I'll see you on it.</p></div>
+      <div class="col"><span class="idx">Tonight</span><h3>Everything unlocks</h3><p>The community, hundreds of hours of training, the CRM, the ads course. Immediately.</p></div>
+      <div class="col"><span class="idx">Right away</span><h3>Onboarding call booked</h3><p>Your onboarding call with my tech team, booked straight from your account.</p></div>
+      <div class="col"><span class="idx">After onboarding</span><h3>Live calls</h3><p>See you there.</p></div>
     </div>
   </div>
-  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>The link is in the chat</small>realinsurancegroup.com/join</div></div>
+  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>How to join</small>The link is in the chat.</div></div>
 </section>
 
 <!-- &#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550; 35 THE MATH &#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550;&#x2550; -->
@@ -1452,11 +1464,11 @@ body.speaker #spk{display:grid;grid-template-columns:1fr 420px;gap:0;min-height:
   <div class="content">
     <div style="position:absolute;left:0;top:44%;transform:translateY(-56%)">
       <h1 class="head a">Ask me <em>anything.</em></h1>
-      <p class="sub a">The link stays open while we talk. Join before we hit <span data-seat="cap">215</span> and you keep the $8,000.</p>
+      <p class="sub a">The link stays open while we talk. Join before we hit <span data-seat="cap">230</span> and you keep the $8,000.</p>
     </div>
   </div>
   <img class="logo a" src="https://renewal-book.javier-d51.workers.dev/assets/logo.webp" alt="The Real Insurance Group">
-  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>The link is in the chat</small>realinsurancegroup.com/join</div></div>
+  <div class="rail"><div class="p">$147<small>/mo</small></div><div class="d"></div><div class="u"><small>How to join</small>The link is in the chat.</div></div>
 </section>
 
 <div class="grain"></div>
@@ -1595,7 +1607,7 @@ LIVE NARRATION (you talk over the loop):
 
 Say the name plainly. "The Skool community. The Real Insurance Group." Not "the room," not "the program."
 
-OPEN WITH THE COUNT: "207 agents in there right now. Everything unlocked the day you join - not drip-fed, not a level system. All of it, day one." (If the count on the slide is stale, check skool.com/realinsurancegroup and change the one line at the top of the deck script.)
+OPEN WITH THE COUNT: "222 agents in there right now. Everything unlocked the day you join - not drip-fed, not a level system. All of it, day one." (If the count on the slide is stale, check skool.com/realinsurancegroup and change the one line at the top of the deck script.)
 
 THE CLASSROOM - don't read the list, sell the top one:
 "Fifty-plus trainings. Look at the first one. Cross-selling. Dental, hospital indemnity, cancer, home health. That's the free money sitting in the book you already have. You saw the script tonight - that whole conversation is a module in there, plus the objections, plus the follow-up."
@@ -1623,12 +1635,12 @@ THEN THE MOST IMPORTANT SENTENCE IN THE DECK:
 
 Then hand off to the next slide and DON'T explain yet: "But it is not staying a hundred and forty-seven. Let me show you exactly why."`,
 
-25: `THE 215 WALL - THE REASON WHY. DO NOT RUSH THIS SLIDE.
+25: `THE 230 WALL - THE REASON WHY. DO NOT RUSH THIS SLIDE.
 
 This is the slide that makes every free thing after it believable. An offer this generous with no explanation reads as a trick. Give them the explanation.
 
 THE FACT FIRST, and point out they can check it:
-"There are 207 members in that group right now. You can go look - it's on the front of the Skool page, anybody can see it. At 215, the price becomes two ninety-seven, and it stays there. That's not a webinar gimmick, that's just where I've decided the number is."
+"There are 222 members in that group right now. You can go look - it's on the front of the Skool page, anybody can see it. At 230, the price becomes two ninety-seven, and it stays there. That's not a webinar gimmick, that's just where I've decided the number is."
 
 THE SEATS: "Eight. That's what's between right now and two ninety-seven. I expect them gone inside a week."
 
@@ -1637,9 +1649,9 @@ THEN THE REASON WHY - this is the part that converts, say it like you mean it be
 
 THEN NAME WHAT'S COMING: "That is the entire reason the next four slides exist. And it's the only night they do."
 
-IF SOMEONE ASKS "what happens if I join at 201?" - answer honestly: "You'd pay two ninety-seven and you would not get the four things I'm about to show you." Don't soften it.
+IF SOMEONE ASKS "what happens if I join at 231?" - answer honestly: "You'd pay two ninety-seven and you would not get the four things I'm about to show you." Don't soften it.
 
-HONESTY CHECK FOR JOHNNY: only run this slide if the 215 rule is real. If the price does not actually go up at 215, cut the slide - one person checking the Skool page next month and finding $147 costs more than this slide makes.`,
+HONESTY CHECK FOR JOHNNY: only run this slide if the 230 rule is real. If the price does not actually go up at 230, cut the slide - one person checking the Skool page next month and finding $147 costs more than this slide makes.`,
 
 26: `THE ONE-TIME OFFER - THE GATE. EVERYTHING AFTER THIS IS EXCLUSIVE.
 
@@ -1650,7 +1662,7 @@ OPEN WITH THE PIVOT: "So that's the community. That's the product, and that's a 
 Then say it flat, no hype: "This part is a one-time offer."
 
 WALK THE FOUR. Do not rush - each one closes a different escape hatch:
-01 - "You showed up live and you stayed. That's the whole qualification. Nobody watching a replay gets this." (kills 'I'll catch it later')
+01 - "You showed up live and you stayed. That's the whole qualification. There is no replay. If I ever decide to do one, it'll be two ninety-seven." (kills 'I'll catch it later')
 02 - "It has never been sold as a package. Every piece of it is something I charge for separately, every other day of the year." (kills 'this is just marketing')
 03 - "It's not coming back next month. I'm not running this again in AEP and I'm not emailing it to you Thursday." (kills 'I'll wait')
 04 - "When this webinar ends, it ends. The membership stays open. This does not." (makes the deadline specific)
@@ -1740,7 +1752,7 @@ Then stop talking and go to the ledger. The next slide is the total.`,
 
 One line at a time, just say the number. No adjectives.
 
-"The CRM, ninety-seven a month. Everything built and loaded, five thousand. The setup call, a thousand. The ads course, two thousand. Your first hundred calls, not for sale."
+"The CRM, ninety-seven a month. Everything built and loaded, five thousand. The onboarding call, a thousand. The ads course, two thousand. Your first hundred calls, not for sale."
 
 THEN THE TWO COLUMNS:
 "Eight thousand dollars. And what you pay for it: nothing."
@@ -1753,9 +1765,9 @@ Then: "The community is a hundred and forty-seven a month. The eight thousand is
 
 This is the slide people screenshot. Let them read a few seconds before you talk.
 
-Ten seconds, left to right: "Left is what you're buying. Right is what you're being given. Bottom left is your price. Bottom right is what it becomes at 215 members - and the eight thousand goes with it."
+Ten seconds, left to right: "Left is what you're buying. Right is what you're being given. Bottom left is your price. Bottom right is what it becomes at 230 members - and the eight thousand goes with it."
 
-SAY THE URL OUT LOUD. Twice. It's in the chat, on the screen, and there's a QR for anyone on a phone. Assume half the room can't find the chat.
+SAY IT OUT LOUD. Twice: "The link is in the chat." There is no URL or QR on screen on purpose. Assume half the room can't find the chat, so point them to it.
 
 COME BACK HERE during Q&A, every few questions.`,
 
@@ -1774,8 +1786,8 @@ Then straight back to the ask.`,
 Kills the objection nobody says out loud: "what actually happens after I put my card in?"
 
 TONIGHT - everything unlocks. Community, all fifty-plus trainings, CRM, ads course. Immediately, not in 48 hours.
-RIGHT AWAY - the setup call booked from inside the account.
-TOMORROW - there's a live call and you'll be on it.
+RIGHT AWAY - the onboarding call booked from inside the account. One call, not two.
+AFTER ONBOARDING - the live calls. See you there.
 
 "That's it. Nothing to install, nothing to wait for. And there are eight seats."`,
 
@@ -1796,13 +1808,13 @@ Straight into Q&A.`,
 
 36: `AMA - HALF THE SALES HAPPEN HERE
 
-Price, link and clock stay on screen. Do not navigate away.
+Price and "the link is in the chat" stay on screen. Do not navigate away.
 
 RULE: every answer ends "...and the link's in the chat." Every one. It'll feel repetitive to you, not to them - people join and leave the whole time.
 
 Every three or four questions, flip back to slide 32 (the whole offer on one screen).
 
-CALL THE SEATS, not just the clock. "Two gone, six left." That's the number that moves people now. If you can see joins coming in, say the count out loud as it drops.
+CALL THE SEATS. "Two gone, six left." That's the number that moves people now. If you can see joins coming in, say the count out loud as it drops.
 
 SAY NAMES WHEN PEOPLE JOIN. "Welcome in, Karen." Real-time social proof is the highest-converting thing in the last ten minutes and it costs nothing.
 
@@ -1814,7 +1826,7 @@ DON'T close the room when questions stop. Sit in it. "I'll stay as long as there
   /* \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 EDIT THIS ONE LINE BEFORE THE LIVE RUN \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550
      Check skool.com/realinsurancegroup for the current member count.
      Everything on slides 24, 26, 32, 34 and 36 updates from here.     */
-  const SEATS = { now: 207, cap: 215 };
+  const SEATS = { now: 222, cap: 230 };
   /* \u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550 */
   document.querySelectorAll('[data-seat]').forEach(el=>{
     const k = el.dataset.seat;
